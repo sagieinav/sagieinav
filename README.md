@@ -1,4 +1,4 @@
-## 1 Hi, I'm Sagi
+## Hi, I'm Sagi
 
 Software developer and third-year CS student at Afeka (GPA 90.9).
 
@@ -11,28 +11,26 @@ after graduation.
 
 <a href="https://www.linkedin.com/in/sagi-einav/"><img src="assets/badges/linkedin.svg" alt="LinkedIn"></a>
 
-## 2 Stack
+## Stack
 
-**Languages:**&nbsp; <img src="assets/badges/kotlin.svg" alt="Kotlin"> <img src="assets/badges/java.svg" alt="Java"> <img src="assets/badges/python.svg" alt="Python"> <img src="assets/badges/c.svg" alt="C"> <img src="assets/badges/bash.svg" alt="Bash">
+**Languages:**&nbsp; <img align="absmiddle" src="assets/badges/kotlin.svg" alt="Kotlin"> <img align="absmiddle" src="assets/badges/java.svg" alt="Java"> <img align="absmiddle" src="assets/badges/python.svg" alt="Python"> <img align="absmiddle" src="assets/badges/c.svg" alt="C"> <img align="absmiddle" src="assets/badges/bash.svg" alt="Bash">
 
-**Android:**&nbsp; <img src="assets/badges/android.svg" alt="Android"> <img src="assets/badges/compose.svg" alt="Jetpack Compose"> <img src="assets/badges/coroutines.svg" alt="Coroutines &amp; Flow"> <img src="assets/badges/hilt.svg" alt="Hilt"> <img src="assets/badges/material3.svg" alt="Material 3">
+**Android:**&nbsp; <img align="absmiddle" src="assets/badges/android.svg" alt="Android"> <img align="absmiddle" src="assets/badges/compose.svg" alt="Jetpack Compose"> <img align="absmiddle" src="assets/badges/coroutines.svg" alt="Coroutines &amp; Flow"> <img align="absmiddle" src="assets/badges/hilt.svg" alt="Hilt"> <img align="absmiddle" src="assets/badges/material3.svg" alt="Material 3">
 
-**Data & Tools:**&nbsp; <img src="assets/badges/firebase.svg" alt="Firebase"> <img src="assets/badges/postgresql.svg" alt="PostgreSQL"> <img src="assets/badges/git.svg" alt="Git"> <img src="assets/badges/gradle.svg" alt="Gradle"> <img src="assets/badges/docker.svg" alt="Docker"> <img src="assets/badges/junit5.svg" alt="JUnit 5">
+**Data & Tools:**&nbsp; <img align="absmiddle" align="absmiddle" src="assets/badges/firebase.svg" alt="Firebase"> <img align="absmiddle" src="assets/badges/postgresql.svg" alt="PostgreSQL"> <img align="absmiddle" src="assets/badges/git.svg" alt="Git"> <img align="absmiddle" src="assets/badges/gradle.svg" alt="Gradle"> <img align="absmiddle" src="assets/badges/docker.svg" alt="Docker"> <img align="absmiddle" src="assets/badges/junit5.svg" alt="JUnit 5">
 
-**IT & Cloud:**&nbsp; <img src="assets/badges/azure.svg" alt="Azure"> <img src="assets/badges/m365.svg" alt="Microsoft 365"> <img src="assets/badges/powershell.svg" alt="PowerShell"> <img src="assets/badges/active-directory.svg" alt="Active Directory"> <img src="assets/badges/intune.svg" alt="Intune">
+**IT & Cloud:**&nbsp; <img align="absmiddle" align="absmiddle" src="assets/badges/azure.svg" alt="Azure"> <img align="absmiddle" src="assets/badges/m365.svg" alt="Microsoft 365"> <img align="absmiddle" src="assets/badges/powershell.svg" alt="PowerShell"> <img align="absmiddle" src="assets/badges/active-directory.svg" alt="Active Directory"> <img align="absmiddle" src="assets/badges/intune.svg" alt="Intune">
 
 
-## 3 Featured Projects
+## Featured Projects
 
 <a href="https://github.com/sagieinav/android-mono-task"><img align="left" width="96" src="https://github.com/user-attachments/assets/1f8097ba-7108-4dbc-8c5c-4a6f92c4736e" alt="MonoTask app icon"></a>
 
-### 3.1 [MonoTask](https://github.com/sagieinav/android-mono-task)
+### [MonoTask](https://github.com/sagieinav/android-mono-task)
 
 A gamified Android task manager that shows one task at a time. Built solo, shipped in
 [3 beta releases](https://github.com/sagieinav/android-mono-task/releases), and used daily as my own planner.
 <br clear="left">
-
-<a href="https://github.com/sagieinav/android-mono-task"><img width="100%" src="https://github.com/user-attachments/assets/c8fa30fc-371c-48b1-93b4-0a9261094a2a" alt="Three MonoTask screens: a single focused task card, the all-done empty state, and the daily brief of overdue and due-today tasks"></a>
 
 - **Design system:** 34 Compose components across 8 screens, a custom swipe-gesture engine, Canvas-drawn charts
 - **Hybrid MVVM + MVI:** one immutable State per screen; one-shot Effects on a separate channel, so they never replay on rotation
@@ -42,14 +40,14 @@ A gamified Android task manager that shows one task at a time. Built solo, shipp
 
 <a href="https://github.com/sagieinav/edu-vetrinator-game-android"><img align="left" width="96" src="https://github.com/user-attachments/assets/f40e2544-97ac-4f3d-ba43-0545080cc45d" alt="George The Vetrinator icon: a pixel-art portrait of George"></a>
 
-### 3.2 [George The Vetrinator](https://github.com/sagieinav/edu-vetrinator-game-android)
+### [George The Vetrinator](https://github.com/sagieinav/edu-vetrinator-game-android)
 
 My first Android app, a pixel-art arcade game parodying the sitcom *Haparlament*. Tilt input runs
 through a low-pass filter and a neutral zone, so one tilt moves exactly one lane. High scores are
 pinned on a Google Maps leaderboard. <sub>*(Kotlin · Android sensors · Google Maps SDK)*</sub>
 <br clear="left">
 
-## 4 Now
+## Currently Learning
 
 - **Full-stack web:** React, Node.js / Express and PostgreSQL, from first screen to deployment
 - **AI-assisted development:** building with AI coding tools while understanding and owning every line, not vibe coding
