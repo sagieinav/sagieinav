@@ -1,53 +1,45 @@
-## Hi, I'm Sagi
+<!-- gen:banner -->
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/gen/banner-dark.0c591762.svg"><img width="100%" alt="Pixel-art Sagi at a laptop. Sagi Einav: Software Developer · CS Student" src="assets/gen/banner-light.23d18216.svg"></picture>
+<!-- /gen:banner -->
 
 Software developer and third-year CS student at Afeka (GPA 90.9).
 
-I build Android apps in Kotlin and Jetpack Compose, with tested business logic and a design
-system of my own. Before that, I spent 4+ years in IT infrastructure: sysadmin in the IDF, then
-Microsoft Support Engineer at We Ankor (Microsoft 365, Azure, Intune, on-prem AD and Exchange).
+I build Android apps in Kotlin and Jetpack Compose, and I'm now expanding into Compose
+Multiplatform, full-stack web and disciplined AI-assisted development.
 
-**Open to student roles in development, DevOps or cloud, 2–3 days/week**, and planning to stay on
-after graduation.
+Before that, 4+ years in IT infrastructure: sysadmin in the IDF, then Microsoft Support Engineer
+at We Ankor (Microsoft 365, Azure, Intune, on-prem AD and Exchange).
 
-<a href="https://www.linkedin.com/in/sagi-einav/"><img src="assets/badges/linkedin.svg" alt="LinkedIn"></a>
+**Open to student roles in development, DevOps or cloud, 2–3 days/week.**
 
-## Stack
+## Main Skills
 
-**Languages:**&nbsp; <img align="absmiddle" src="assets/badges/kotlin.svg" alt="Kotlin"> <img align="absmiddle" src="assets/badges/java.svg" alt="Java"> <img align="absmiddle" src="assets/badges/python.svg" alt="Python"> <img align="absmiddle" src="assets/badges/c.svg" alt="C"> <img align="absmiddle" src="assets/badges/bash.svg" alt="Bash">
+<!-- gen:skills -->
+<picture><source media="(prefers-color-scheme: dark) and (max-width: 430px)" srcset="assets/gen/label-languages-dark-330.21b7d072.svg"><source media="(max-width: 430px)" srcset="assets/gen/label-languages-light-330.af2df5ff.svg"><source media="(prefers-color-scheme: dark) and (max-width: 767px)" srcset="assets/gen/label-languages-dark-560.8d489e5b.svg"><source media="(max-width: 767px)" srcset="assets/gen/label-languages-light-560.462bd3df.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/gen/label-languages-dark-170.288438e4.svg"><img alt="Languages:" src="assets/gen/label-languages-light-170.c45aa411.svg"></picture> <a href="https://kotlinlang.org"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-kotlin-phone.c24cf066.svg"><img src="assets/gen/icon-kotlin-desktop.865832f2.svg" alt="Kotlin" title="Kotlin"></picture></a><a href="https://dev.java"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-java-phone.199bdb1a.svg"><img src="assets/gen/icon-java-desktop.d0a79b1f.svg" alt="Java" title="Java"></picture></a><a href="https://www.python.org"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-python-phone.fcca5194.svg"><img src="assets/gen/icon-python-desktop.e6664c6f.svg" alt="Python" title="Python"></picture></a><a href="https://www.c-language.org"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-c-phone.d6384a48.svg"><img src="assets/gen/icon-c-desktop.7ed2eb50.svg" alt="C" title="C"></picture></a><a href="https://www.gnu.org/software/bash/"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-bash-phone.b81e1d45.svg"><img src="assets/gen/icon-bash-desktop.bd39b238.svg" alt="Bash" title="Bash"></picture></a><a href="https://www.iso.org/standard/76583.html"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-sql-phone.3583a575.svg"><img src="assets/gen/icon-sql-desktop.b0a3984b.svg" alt="SQL" title="SQL"></picture></a><br>
+<picture><source media="(prefers-color-scheme: dark) and (max-width: 430px)" srcset="assets/gen/label-android-dark-330.0c251345.svg"><source media="(max-width: 430px)" srcset="assets/gen/label-android-light-330.d2af23ed.svg"><source media="(prefers-color-scheme: dark) and (max-width: 767px)" srcset="assets/gen/label-android-dark-560.51432f5d.svg"><source media="(max-width: 767px)" srcset="assets/gen/label-android-light-560.8e3c46c5.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/gen/label-android-dark-170.cf65b1e3.svg"><img alt="Android:" src="assets/gen/label-android-light-170.cd45de81.svg"></picture> <a href="https://developer.android.com"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-android-phone.8b4eb57b.svg"><img src="assets/gen/icon-android-desktop.7b7939c5.svg" alt="Android" title="Android"></picture></a><a href="https://developer.android.com/compose"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-compose-phone.1d5d8ccd.svg"><img src="assets/gen/icon-compose-desktop.3929ac18.svg" alt="Jetpack Compose" title="Jetpack Compose"></picture></a><a href="https://firebase.google.com"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-firebase-phone.f360c8d8.svg"><img src="assets/gen/icon-firebase-desktop.b7cc2fd1.svg" alt="Firebase" title="Firebase"></picture></a><br>
+<picture><source media="(prefers-color-scheme: dark) and (max-width: 430px)" srcset="assets/gen/label-tools-cloud-dark-330.42406011.svg"><source media="(max-width: 430px)" srcset="assets/gen/label-tools-cloud-light-330.d9293488.svg"><source media="(prefers-color-scheme: dark) and (max-width: 767px)" srcset="assets/gen/label-tools-cloud-dark-560.df940619.svg"><source media="(max-width: 767px)" srcset="assets/gen/label-tools-cloud-light-560.00e94f7f.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/gen/label-tools-cloud-dark-170.a5983533.svg"><img alt="Tools &amp; Cloud:" src="assets/gen/label-tools-cloud-light-170.8abd4aef.svg"></picture> <a href="https://git-scm.com"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-git-phone.1e5d0e9b.svg"><img src="assets/gen/icon-git-desktop.9e61ce31.svg" alt="Git" title="Git"></picture></a><a href="https://www.docker.com"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-docker-phone.4abd4c2f.svg"><img src="assets/gen/icon-docker-desktop.202e606d.svg" alt="Docker" title="Docker"></picture></a><a href="https://www.postgresql.org"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-postgresql-phone.4aeb533f.svg"><img src="assets/gen/icon-postgresql-desktop.44218031.svg" alt="PostgreSQL" title="PostgreSQL"></picture></a><a href="https://azure.microsoft.com"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-azure-phone.3bab87d3.svg"><img src="assets/gen/icon-azure-desktop.87eae63a.svg" alt="Azure" title="Azure"></picture></a><a href="https://learn.microsoft.com/powershell/"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-powershell-phone.abbc552d.svg"><img src="assets/gen/icon-powershell-desktop.a3ad2a8d.svg" alt="PowerShell" title="PowerShell"></picture></a><a href="https://www.microsoft.com/windows"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-windows-phone.3e3cea71.svg"><img src="assets/gen/icon-windows-desktop.81295a13.svg" alt="Windows" title="Windows"></picture></a>
+<!-- /gen:skills -->
 
-**Android:**&nbsp; <img align="absmiddle" src="assets/badges/android.svg" alt="Android"> <img align="absmiddle" src="assets/badges/compose.svg" alt="Jetpack Compose"> <img align="absmiddle" src="assets/badges/coroutines.svg" alt="Coroutines &amp; Flow"> <img align="absmiddle" src="assets/badges/hilt.svg" alt="Hilt"> <img align="absmiddle" src="assets/badges/material3.svg" alt="Material 3">
+### Studying
 
-**Data & Tools:**&nbsp; <img align="absmiddle" align="absmiddle" src="assets/badges/firebase.svg" alt="Firebase"> <img align="absmiddle" src="assets/badges/postgresql.svg" alt="PostgreSQL"> <img align="absmiddle" src="assets/badges/git.svg" alt="Git"> <img align="absmiddle" src="assets/badges/gradle.svg" alt="Gradle"> <img align="absmiddle" src="assets/badges/docker.svg" alt="Docker"> <img align="absmiddle" src="assets/badges/junit5.svg" alt="JUnit 5">
+<!-- gen:studying -->
+<picture><source media="(prefers-color-scheme: dark) and (max-width: 430px)" srcset="assets/gen/label-full-stack-web-dark-330.52d20922.svg"><source media="(max-width: 430px)" srcset="assets/gen/label-full-stack-web-light-330.850e7b0a.svg"><source media="(prefers-color-scheme: dark) and (max-width: 767px)" srcset="assets/gen/label-full-stack-web-dark-560.1cd4d432.svg"><source media="(max-width: 767px)" srcset="assets/gen/label-full-stack-web-light-560.aaab8b17.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/gen/label-full-stack-web-dark-170.11315919.svg"><img alt="Full-Stack Web:" src="assets/gen/label-full-stack-web-light-170.04096d8b.svg"></picture> <a href="https://react.dev"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-react-phone.c76017bb.svg"><img src="assets/gen/icon-react-desktop.1bd71d03.svg" alt="React" title="React"></picture></a><a href="https://nodejs.org"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-nodejs-phone.10e322d8.svg"><img src="assets/gen/icon-nodejs-desktop.2529c950.svg" alt="Node.js" title="Node.js"></picture></a><a href="https://www.typescriptlang.org"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-typescript-phone.15f076d6.svg"><img src="assets/gen/icon-typescript-desktop.e3f28f79.svg" alt="TypeScript" title="TypeScript"></picture></a><a href="https://tc39.es"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-javascript-phone.f5e8cd1b.svg"><img src="assets/gen/icon-javascript-desktop.49d0558a.svg" alt="JavaScript" title="JavaScript"></picture></a><a href="https://html.spec.whatwg.org"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-html-phone.63644467.svg"><img src="assets/gen/icon-html-desktop.dbafc5b6.svg" alt="HTML5" title="HTML5"></picture></a><a href="https://www.w3.org/Style/CSS/"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-css-phone.c8308c65.svg"><img src="assets/gen/icon-css-desktop.1c599555.svg" alt="CSS" title="CSS"></picture></a><br>
+<picture><source media="(prefers-color-scheme: dark) and (max-width: 430px)" srcset="assets/gen/label-ai-llm-dev-dark-330.5502bb01.svg"><source media="(max-width: 430px)" srcset="assets/gen/label-ai-llm-dev-light-330.69437dea.svg"><source media="(prefers-color-scheme: dark) and (max-width: 767px)" srcset="assets/gen/label-ai-llm-dev-dark-560.071031b8.svg"><source media="(max-width: 767px)" srcset="assets/gen/label-ai-llm-dev-light-560.36c57901.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/gen/label-ai-llm-dev-dark-170.3effa5f5.svg"><img alt="AI &amp; LLM Dev:" src="assets/gen/label-ai-llm-dev-light-170.6b189fba.svg"></picture> <a href="https://claude.com/product/claude-code"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-claudecode-phone.4a9cbd0b.svg"><img src="assets/gen/icon-claudecode-desktop.6a7aec0f.svg" alt="Claude Code" title="Claude Code"></picture></a><a href="https://www.langchain.com"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-langchain-phone.75e99dbf.svg"><img src="assets/gen/icon-langchain-desktop.91e1e5c2.svg" alt="LangChain" title="LangChain"></picture></a><a href="https://modelcontextprotocol.io"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-mcp-phone.6f91a4bc.svg"><img src="assets/gen/icon-mcp-desktop.d91a3772.svg" alt="MCP" title="MCP"></picture></a><a href="https://www.crewai.com"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-crewai-phone.32089d86.svg"><img src="assets/gen/icon-crewai-desktop.a9d5ac1b.svg" alt="CrewAI" title="CrewAI"></picture></a>
+<!-- /gen:studying -->
 
-**IT & Cloud:**&nbsp; <img align="absmiddle" align="absmiddle" src="assets/badges/azure.svg" alt="Azure"> <img align="absmiddle" src="assets/badges/m365.svg" alt="Microsoft 365"> <img align="absmiddle" src="assets/badges/powershell.svg" alt="PowerShell"> <img align="absmiddle" src="assets/badges/active-directory.svg" alt="Active Directory"> <img align="absmiddle" src="assets/badges/intune.svg" alt="Intune">
-
+<sub>Full-stack web (a React + Node.js + PostgreSQL app, from first screen to cloud deployment) and LLM apps (agents, RAG and MCP servers), built with AI tools where I own every line. Next up: taking Compose to Compose Multiplatform for my final project.</sub>
 
 ## Featured Projects
 
-<a href="https://github.com/sagieinav/android-mono-task"><img align="left" width="96" src="https://github.com/user-attachments/assets/1f8097ba-7108-4dbc-8c5c-4a6f92c4736e" alt="MonoTask app icon"></a>
+<!-- gen:projects -->
+<a href="https://github.com/sagieinav/android-mono-task"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/gen/card-monotask-dark.be107180.svg"><img width="268" alt="MonoTask: Gamified Android task manager that shows one task at a time. Built with android, compose, kotlin, mvvm, firestore, hilt, junit5." src="assets/gen/card-monotask-light.e1c5abbd.svg"></picture></a>&nbsp; <a href="https://github.com/sagieinav/edu-vetrinator-game-android"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/gen/card-vetrinator-dark.d2792455.svg"><img width="268" alt="George The Vetrinator: Pixel-art tilt arcade game with a Google Maps high-score board. Built with android, xml, kotlin, sensors, maps-api, pixel-art." src="assets/gen/card-vetrinator-light.3d2f1476.svg"></picture></a>
+<!-- /gen:projects -->
 
-### [MonoTask](https://github.com/sagieinav/android-mono-task)
+## Contact Me
 
-A gamified Android task manager that shows one task at a time. Built solo, shipped in
-[3 beta releases](https://github.com/sagieinav/android-mono-task/releases), and used daily as my own planner.
-<br clear="left">
+<!-- gen:contact -->
+<a href="https://www.linkedin.com/in/sagi-einav/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/gen/contact-linkedin-dark.3efce4e8.svg"><img alt="LinkedIn: in/sagi-einav" src="assets/gen/contact-linkedin-light.439b9352.svg"></picture></a> <a href="mailto:sagi.einav@icloud.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/gen/contact-email-dark.e4d5eaab.svg"><img alt="Email: sagi.einav@icloud.com" src="assets/gen/contact-email-light.52c7e2cb.svg"></picture></a>
+<!-- /gen:contact -->
 
-- **Design system:** 34 Compose components across 8 screens, a custom swipe-gesture engine, Canvas-drawn charts
-- **Hybrid MVVM + MVI:** one immutable State per screen; one-shot Effects on a separate channel, so they never replay on rotation
-- **Task-picking algorithm:** a logistic urgency curve, weighted against importance and penalized per snooze
-- **Real-time data:** Firestore streamed as Flows; streak and XP stats update in a single transaction
-- **87 unit tests** (JUnit 5, AssertK) on XP, achievements, task selection and undo/restore
-
-<a href="https://github.com/sagieinav/edu-vetrinator-game-android"><img align="left" width="96" src="https://github.com/user-attachments/assets/f40e2544-97ac-4f3d-ba43-0545080cc45d" alt="George The Vetrinator icon: a pixel-art portrait of George"></a>
-
-### [George The Vetrinator](https://github.com/sagieinav/edu-vetrinator-game-android)
-
-My first Android app, a pixel-art arcade game parodying the sitcom *Haparlament*. Tilt input runs
-through a low-pass filter and a neutral zone, so one tilt moves exactly one lane. High scores are
-pinned on a Google Maps leaderboard. <sub>*(Kotlin · Android sensors · Google Maps SDK)*</sub>
-<br clear="left">
-
-## Currently Learning
-
-- **Full-stack web:** React, Node.js / Express and PostgreSQL, from first screen to deployment
-- **AI-assisted development:** building with AI coding tools while understanding and owning every line, not vibe coding
+> [!IMPORTANT]
+> **Recruiter?** [Download my resume](https://github.com/sagieinav/sagieinav/raw/main/assets/Sagi_Einav_CV.pdf).
