@@ -6,10 +6,10 @@ one config file and one script:
 ```
 profile.toml            what the profile shows: fonts, colours, banner, skill rows, tools, projects, contacts
 scripts/build.py        draws every asset into assets/gen/ and rewrites the README's gen blocks
-scripts/clean_scene.py  one-off retouch of the banner art (posters and a mug removed)
-assets/src/             source images: the pixel-art scene (raw + retouched), the SQL drawing
+assets/src/             source images: the pixel-art scene (banner), the SQL drawing
 assets/thumbs/          2:1 project thumbnails (536x268) used by the cards
 assets/icons/           local logos (LinkedIn)
+assets/cv/              the resume PDF linked from the README
 assets/gen/             build output only, never edited by hand
 ```
 

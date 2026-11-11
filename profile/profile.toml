@@ -1,0 +1,195 @@
+# Everything generated on the profile is defined here. Edit, then rebuild:
+#
+#   pip install -r scripts/requirements.txt    (Python 3.11+)
+#   python3 scripts/build.py --check           (validate this file only)
+#   python3 scripts/build.py
+#
+# The build draws every asset into assets/gen/ (file names carry a content hash, so caches never
+# serve a stale image), deletes ones no longer used, and rewrites the README blocks between
+# <!-- gen:NAME --> and <!-- /gen:NAME -->. Everything outside those blocks is yours to edit by hand.
+
+# MonoTask's res/font folder: Gloock, Google Sans Flex and Harabara are read from here, never copied.
+app_fonts = "~/Developer/android-mono-task/designsystem/src/main/res/font"
+
+# ---------------------------------------------------------------- type
+# file: "app:<file>" (from app_fonts) or "google:<path under github.com/google/fonts/ofl>".
+# axes pins variable-font axes, like FontVariation.Setting in Compose.
+[fonts.label]    # skill-row labels
+file = "google:manrope/Manrope[wght].ttf"
+weight = 700
+
+[fonts.display]  # the name on the banner
+file = "google:playfairdisplay/PlayfairDisplay[wght].ttf"
+weight = 700
+
+[fonts.title]    # card titles
+file = "google:playfairdisplay/PlayfairDisplay[wght].ttf"
+weight = 700
+
+[fonts.body]     # MonoTask's UI font: Google Sans Flex with ROND 100 (googleSansRounded in Type.kt)
+file = "app:google_sans_flex.ttf"
+weight = 450
+axes = { ROND = 100 }
+
+[fonts.tag]      # MonoTask's tag font; bolded the way Android fakes SemiBold on a single-weight font
+file = "app:harabara.otf"
+space_scale = 0.55   # Harabara's space is wide for two-word tags
+fake_bold = 1.0      # 1.0 = exactly Android's synthetic bold
+
+# ---------------------------------------------------------------- colour
+[theme.dark]
+text = "#E6EDF3"
+muted = "#8B949E"
+card = "#161B22"
+line = "#30363D"
+accent = "#A5D6A7"
+
+[theme.light]
+text = "#1F2328"
+muted = "#59636E"
+card = "#FFFFFF"
+line = "#D0D7DE"
+accent = "#2E7D32"
+
+# Tag colours by category: every tag in a category gets the category's colour, so the same kind of
+# tech reads the same on every card. color is the tag's text colour; the fill and border are
+# derived from it the way MonoTask's TaskTag does. Tags in no category use tag_neutral.
+tag_neutral = "#5F6368"
+
+[tag_categories.android]       # Android platform & Jetpack
+color = "#1E8E3E"
+tags = ["android", "compose", "xml", "sensors", "hilt", "room"]
+
+[tag_categories.kotlin]
+color = "#7F52FF"
+tags = ["kotlin", "coroutines", "flow", "kmp", "cmp"]
+
+[tag_categories.firebase]
+color = "#E8710A"
+tags = ["firebase", "firestore", "auth", "fcm"]
+
+[tag_categories.google]        # Google APIs & services
+color = "#1A73E8"
+tags = ["maps-api", "maps sdk", "gemini"]
+
+[tag_categories.architecture]
+color = "#00897B"
+tags = ["mvvm", "mvi", "clean architecture"]
+
+[tag_categories.testing]
+color = "#D93025"
+tags = ["junit5", "junit 5", "assertk", "turbine"]
+
+[tag_categories.art]
+color = "#C2185B"
+tags = ["pixel-art", "pixel art", "design system"]
+
+# ---------------------------------------------------------------- banner
+[banner]
+scene = "assets/src/scene-clean.png"   # retouched by scripts/clean_scene.py from assets/src/scene.webp
+crop = [780, 332, 640, 479]            # x, y, width, height inside the scene
+width = 830
+height = 220
+name = "Sagi Einav"
+title = "Software Developer · CS Student"
+name_size = 70    # px; drawn large because on a phone the whole banner shrinks to ~40%
+title_size = 31   # both shrink automatically if the text doesn't fit
+alt = "Pixel-art Sagi at a laptop. Sagi Einav: Software Developer · CS Student"
+
+# ---------------------------------------------------------------- tools
+# Every icon on the profile. icon: a skillicons.dev id, "sk:<name>" for a github.com/syvixor/skills-icons
+# logo redrawn in skillicons' exact tile shape, or "draw:<name>" for a tile drawn by build.py.
+# Optional scale (< 1) shrinks a logo that crowds its tile.
+# Each icon is its own image: alt text = name, and it links to url: the tool's official home, or for
+# languages without one, the body that defines it (SQL: ISO/IEC 9075, JavaScript: TC39 / ECMA-262,
+# HTML: the WHATWG Living Standard, CSS: the W3C).
+[tools]
+kotlin = { name = "Kotlin", url = "https://kotlinlang.org", icon = "kotlin" }
+java = { name = "Java", url = "https://dev.java", icon = "java" }
+python = { name = "Python", url = "https://www.python.org", icon = "py" }
+c = { name = "C", url = "https://www.c-language.org", icon = "c" }
+bash = { name = "Bash", url = "https://www.gnu.org/software/bash/", icon = "bash" }
+sql = { name = "SQL", url = "https://www.iso.org/standard/76583.html", icon = "draw:sql" }
+android = { name = "Android", url = "https://developer.android.com", icon = "androidstudio" }
+compose = { name = "Jetpack Compose", url = "https://developer.android.com/compose", icon = "sk:jetpackcompose" }
+firebase = { name = "Firebase", url = "https://firebase.google.com", icon = "firebase" }
+postgresql = { name = "PostgreSQL", url = "https://www.postgresql.org", icon = "postgres" }
+git = { name = "Git", url = "https://git-scm.com", icon = "git" }
+docker = { name = "Docker", url = "https://www.docker.com", icon = "docker" }
+azure = { name = "Azure", url = "https://azure.microsoft.com", icon = "azure" }
+powershell = { name = "PowerShell", url = "https://learn.microsoft.com/powershell/", icon = "powershell" }
+windows = { name = "Windows", url = "https://www.microsoft.com/windows", icon = "windows" }
+react = { name = "React", url = "https://react.dev", icon = "react" }
+nodejs = { name = "Node.js", url = "https://nodejs.org", icon = "nodejs" }
+typescript = { name = "TypeScript", url = "https://www.typescriptlang.org", icon = "ts" }
+javascript = { name = "JavaScript", url = "https://tc39.es", icon = "js" }
+html = { name = "HTML5", url = "https://html.spec.whatwg.org", icon = "html" }
+css = { name = "CSS", url = "https://www.w3.org/Style/CSS/", icon = "css" }
+claudecode = { name = "Claude Code", url = "https://claude.com/product/claude-code", icon = "sk:claudecode" }
+langchain = { name = "LangChain", url = "https://www.langchain.com", icon = "sk:langchain" }
+mcp = { name = "MCP", url = "https://modelcontextprotocol.io", icon = "sk:modelcontextprotocol" }
+crewai = { name = "CrewAI", url = "https://www.crewai.com", icon = "sk:crewai", scale = 0.78 }
+
+# ---------------------------------------------------------------- skill rows
+# icons: keys from [tools]. Keep rows at 6 icons or fewer: on phones each row sits on its own line,
+# and 6 is the most that fits a phone screen (360px wide and up).
+[[skill_rows]]
+block = "skills"
+label = "Languages"
+icons = ["kotlin", "java", "python", "c", "bash", "sql"]
+
+[[skill_rows]]
+block = "skills"
+label = "Android"
+icons = ["android", "compose", "firebase"]
+
+[[skill_rows]]
+block = "skills"
+label = "Tools & Cloud"
+icons = ["git", "docker", "postgresql", "azure", "powershell", "windows"]
+
+[[skill_rows]]
+block = "studying"
+label = "Full-Stack Web"   # course 10266: React SPA + Node REST API + PostgreSQL, deployed to the cloud
+icons = ["react", "nodejs", "typescript", "javascript", "html", "css"]
+
+[[skill_rows]]
+block = "studying"
+label = "AI & LLM Dev"     # course 10263: provider APIs, LangChain, MCP servers, agents (CrewAI), + Claude Code
+icons = ["claudecode", "langchain", "mcp", "crewai"]
+
+# ---------------------------------------------------------------- projects
+# thumb: a 2:1 image in assets/thumbs. Cards are 268px wide: 3 per row on desktop, 1 on phones.
+[[projects]]
+slug = "monotask"
+url = "https://github.com/sagieinav/android-mono-task"
+thumb = "thumb-monotask.jpg"
+title = "MonoTask"
+pitch = "Gamified Android task manager that shows one task at a time."
+tags = ["android", "compose", "kotlin", "mvvm", "firestore", "hilt", "junit5"]
+
+[[projects]]
+slug = "vetrinator"
+url = "https://github.com/sagieinav/edu-vetrinator-game-android"
+thumb = "thumb-vetrinator.jpg"
+title = "George The Vetrinator"
+pitch = "Pixel-art tilt arcade game with a Google Maps high-score board."
+tags = ["android", "xml", "kotlin", "sensors", "maps-api", "pixel-art"]
+
+# ---------------------------------------------------------------- contact
+# icon: "si:<simple-icons slug>" or "file:<name in assets/icons>". color: "#hex" text colour.
+[[contacts]]
+slug = "linkedin"
+label = "in/sagi-einav"
+url = "https://www.linkedin.com/in/sagi-einav/"
+icon = "file:linkedin.svg"
+color = "#0A66C2"
+alt = "LinkedIn: in/sagi-einav"
+
+[[contacts]]
+slug = "email"
+label = "sagi.einav@icloud.com"
+url = "mailto:sagi.einav@icloud.com"
+icon = "si:gmail"
+color = "#EA4335"
+alt = "Email: sagi.einav@icloud.com"

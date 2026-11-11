@@ -273,10 +273,10 @@ def tag_style(label, theme_name, cfg, color=None):
     return mix(cfg["theme"]["dark"]["card"], c, 0.28), light_fg, 0.35, light_fg, 1.0
 
 
-def tag(label, x, y, size, theme_name, cfg, font, icon=None, color=None, shape="pill"):
+def tag(label, x, y, size, theme_name, cfg, font, icon=None, color=None, shape="pill", lower=True):
     """Draw a tag at (x, y); returns (svg, w, h). Geometry scales from MonoTask's 14sp tag."""
     k = size / 14
-    text = label.lower()
+    text = label.lower() if lower else label  # MonoTask tags are lowercase; banner badge keeps case
     bg, border, border_op, fg, fg_op = tag_style(label, theme_name, cfg, color)
     pad, bw = 8 * k, 1.5 * k
     h = size * 1.05 + 4 * k + 2 * bw
@@ -306,6 +306,9 @@ def picture(dark, light, alt, attrs=""):
 
 
 def build_banner(cfg, fonts, out):
+    """830x220 card: pixel-art crop on the left, fading into the card; name, accent bar, title
+    and an optional badge (e.g. GPA) on the right. Text is large on purpose: on a phone the whole
+    banner shrinks to ~40%."""
     b = cfg["banner"]
     w, h = b["width"], b["height"]
     cx, cy, cw, ch = b["crop"]
@@ -317,26 +320,44 @@ def build_banner(cfg, fonts, out):
     buf = io.BytesIO()
     scene.save(buf, "JPEG", quality=88)
     img = data_uri(buf.getvalue(), "image/jpeg")
+    fade = b.get("fade", 140)
+    # Eased (smoothstep) stops: a linear ramp shows a visible edge where it starts and ends.
+    stops = "".join(f'<stop offset="{i / 8:.3f}" stop-opacity="{(3 * (i / 8) ** 2 - 2 * (i / 8) ** 3):.3f}"/>'
+                    for i in range(9))
     files = {}
     for theme_name, t in cfg["theme"].items():
-        tx = iw + 36
+        tx = iw + 34
         room = w - tx - 26
         name_size, title_size = b["name_size"], b["title_size"]  # shrunk below only if they don't fit
         while fonts["display"].width(b["name"], name_size) > room:
             name_size -= 1
         while fonts["body"].width(b["title"], title_size) > room:
             title_size -= 1
+        badge = ""
+        if b.get("badge"):  # MonoTask-style tag under the title, case kept
+            svg, _, badge_h = tag(b["badge"], tx, 0, b.get("badge_size", 20), theme_name, cfg, fonts["tag"],
+                                  color=b.get("badge_color"), lower=False)
+            badge = svg
+        # vertical rhythm: centre the text block (name, bar, title, badge) in the card
+        block = name_size * 0.72 + 22 + title_size * 1.25 + (14 + badge_h if badge else 0)
+        top = (h - block) / 2
+        name_base = top + name_size * 0.72
+        title_base = name_base + 22 + title_size * 1.25
+        if badge:
+            badge = f'<g transform="translate(0 {title_base + 14:.1f})">{badge}</g>'
+        fade_stops = stops.replace("<stop ", f'<stop stop-color="{t["card"]}" ')
         body = (f'<defs><clipPath id="card"><rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="16"/></clipPath>'
-                f'<linearGradient id="fade"><stop offset="0" stop-color="{t["card"]}" stop-opacity="0"/>'
-                f'<stop offset="1" stop-color="{t["card"]}"/></linearGradient></defs>'
+                f'<linearGradient id="fade">{fade_stops}</linearGradient></defs>'
                 f'<g clip-path="url(#card)"><rect width="{w}" height="{h}" fill="{t["card"]}"/>'
                 f'<image width="{iw}" height="{h}" href="{img}"/>'
-                f'<rect x="{iw - 60}" width="60" height="{h}" fill="url(#fade)"/></g>'
+                f'<rect x="{iw - fade}" width="{fade + 4}" height="{h}" fill="url(#fade)"/>'  # +4 covers the photo edge
+                f'<rect x="{iw}" width="4" height="{h}" fill="{t["card"]}"/></g>'
                 f'<rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="16" fill="none" stroke="{t["line"]}"/>'
-                + fonts["display"].path(b["name"], tx, h * 0.47, name_size, t["text"])
-                + f'<rect x="{tx + 2}" y="{h * 0.47 + 16:.0f}" width="44" height="5" rx="2.5" fill="{t["accent"]}"/>'
-                + fonts["body"].path(b["title"], tx, h * 0.47 + 66, title_size, t["muted"]))
-        files[theme_name] = out.save(f"banner-{theme_name}", svg_doc(w, h, body, f'{b["name"]}: {b["title"]}'))
+                + fonts["display"].path(b["name"], tx, name_base, name_size, t["text"])
+                + f'<rect x="{tx + 2}" y="{name_base + 12:.1f}" width="44" height="5" rx="2.5" fill="{t["accent"]}"/>'
+                + fonts["body"].path(b["title"], tx, title_base, title_size, t.get("subtle", t["muted"]))
+                + badge)
+        files[theme_name] = out.save(f"banner-{theme_name}", svg_doc(w, h, body, b["alt"]))
     return picture(files["dark"], files["light"], b["alt"], ' width="100%"')
 
 

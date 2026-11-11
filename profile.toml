@@ -40,6 +40,7 @@ fake_bold = 1.0      # 1.0 = exactly Android's synthetic bold
 [theme.dark]
 text = "#E6EDF3"
 muted = "#8B949E"
+subtle = "#B4BDC7"   # between text and muted: banner title
 card = "#161B22"
 line = "#30363D"
 accent = "#A5D6A7"
@@ -47,6 +48,7 @@ accent = "#A5D6A7"
 [theme.light]
 text = "#1F2328"
 muted = "#59636E"
+subtle = "#3D444D"
 card = "#FFFFFF"
 line = "#D0D7DE"
 accent = "#2E7D32"
@@ -86,8 +88,9 @@ tags = ["pixel-art", "pixel art", "design system"]
 
 # ---------------------------------------------------------------- banner
 [banner]
-scene = "assets/src/scene-clean.png"   # retouched by scripts/clean_scene.py from assets/src/scene.webp
-crop = [780, 332, 640, 479]            # x, y, width, height inside the scene
+scene = "assets/src/scene-clean.png"   # 1004x1004 pixel-art scene
+crop = [0, 236, 1004, 756]             # x, y, width, height inside the scene
+fade = 140                             # px the art fades into the card (eased)
 width = 830
 height = 220
 name = "Sagi Einav"

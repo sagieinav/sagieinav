@@ -2,5 +2,3 @@
 fonttools==4.68.0
 pillow==13.0.0
 numpy==2.4.6
-# scripts/clean_scene.py only (one-off retouch of the banner art)
-opencv-python-headless==5.0.0.93
