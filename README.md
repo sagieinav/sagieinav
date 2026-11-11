@@ -2,9 +2,9 @@
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/gen/banner-dark.5a476d6d.svg"><img width="100%" alt="Pixel-art Sagi at a laptop. Sagi Einav: Software Developer · CS Student" src="assets/gen/banner-light.1d56b0d9.svg"></picture>
 <!-- /gen:banner -->
 
-Third-year CS student at Afeka (GPA 90.9). I build Android apps in Kotlin and Jetpack Compose, and I'm now expanding into Compose Multiplatform, full-stack web and disciplined AI-assisted development.
+Third-year CS student at Afeka (GPA 90.9). I build Android apps in Kotlin and Jetpack Compose, and I’m taking that to Compose Multiplatform for my final project. Alongside it, I’m building a full-stack React + Node.js + PostgreSQL app through to cloud deployment, and LLM apps with agents, RAG and MCP servers.
 
-Before that, 4+ years in IT infrastructure: sysadmin in the IDF, then Microsoft Support Engineer at We Ankor (Microsoft 365, Azure, Intune, AD, Exchange).
+Before that, 4+ years in IT infrastructure (Microsoft 365, Azure, Intune, AD, Exchange).
 
 > [!NOTE]
 > **Open to student roles in development, DevOps or cloud, 2–3 days/week.**
@@ -24,9 +24,6 @@ Before that, 4+ years in IT infrastructure: sysadmin in the IDF, then Microsoft 
 <picture><source media="(prefers-color-scheme: dark) and (max-width: 430px)" srcset="assets/gen/label-ai-llm-dev-dark-330.5502bb01.svg"><source media="(max-width: 430px)" srcset="assets/gen/label-ai-llm-dev-light-330.69437dea.svg"><source media="(prefers-color-scheme: dark) and (max-width: 767px)" srcset="assets/gen/label-ai-llm-dev-dark-560.071031b8.svg"><source media="(max-width: 767px)" srcset="assets/gen/label-ai-llm-dev-light-560.36c57901.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/gen/label-ai-llm-dev-dark-170.3effa5f5.svg"><img alt="AI &amp; LLM Dev:" src="assets/gen/label-ai-llm-dev-light-170.6b189fba.svg"></picture> <a href="https://claude.com/product/claude-code"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-claudecode-phone.4a9cbd0b.svg"><img src="assets/gen/icon-claudecode-desktop.6a7aec0f.svg" alt="Claude Code" title="Claude Code"></picture></a><a href="https://www.langchain.com"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-langchain-phone.75e99dbf.svg"><img src="assets/gen/icon-langchain-desktop.91e1e5c2.svg" alt="LangChain" title="LangChain"></picture></a><a href="https://modelcontextprotocol.io"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-mcp-phone.6f91a4bc.svg"><img src="assets/gen/icon-mcp-desktop.d91a3772.svg" alt="MCP" title="MCP"></picture></a><a href="https://www.crewai.com"><picture><source media="(max-width: 767px)" srcset="assets/gen/icon-crewai-phone.32089d86.svg"><img src="assets/gen/icon-crewai-desktop.a9d5ac1b.svg" alt="CrewAI" title="CrewAI"></picture></a>
 <!-- /gen:studying -->
 
-- **Full-stack web:** a React + Node.js + PostgreSQL app, from first screen to cloud deployment
-- **LLM apps:** agents, RAG and MCP servers, built with AI tools where I own every line
-- **Next up:** taking Compose to Compose Multiplatform for my final project
 
 ## Featured Projects
 
